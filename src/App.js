@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 /* ─────────────────────────────────────────
    RESTAURANT DATABASE  (기존 10 + 신규 10 = 총 20개)
@@ -588,7 +588,7 @@ export default function VeggieSeoul() {
   const [district,setDistrict]=useState("전체");
   const [cuisine,setCuisine]=useState("전체");
   const [sort,setSort]=useState("rating");
-  const [priceFilter,setPriceFilter]=useState("전체");
+  const [priceFilter]=useState("전체");
   const [badgeFilter,setBadgeFilter]=useState("전체");
   const [selected,setSelected]=useState(null);
   const [detailTab,setDetailTab]=useState("info");
